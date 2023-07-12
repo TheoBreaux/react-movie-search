@@ -20,7 +20,21 @@ function App() {
   };
 
   useEffect(() => {
-    getMovie("Clueless");
+    const randomMovies = [
+      "Clueless",
+      "The Godfather",
+      "Inception",
+      "Pulp Fiction",
+      "The Shawshank Redemption",
+      "Go",
+      "Shrek",
+      "American Psycho",
+      "Barie",
+      "Rocky Horror Picture Show",
+    ];
+    const randomIndex = Math.floor(Math.random() * randomMovies.length);
+    const randomMovie = randomMovies[randomIndex];
+    getMovie(randomMovie);
   }, []);
 
   return (
