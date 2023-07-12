@@ -20,6 +20,8 @@ function App() {
   };
 
   useEffect(() => {
+    console.log("running");
+    
     const randomMovies = [
       "Clueless",
       "The Godfather",
