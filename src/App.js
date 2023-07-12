@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import MovieDisplay from "./components/MovieDisplay";
 import Form from "./components/Form";
@@ -20,10 +20,9 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("running");
-    
     const randomMovies = [
       "Clueless",
+      "Chicago",
       "The Godfather",
       "Inception",
       "Pulp Fiction",
@@ -31,9 +30,10 @@ function App() {
       "Go",
       "Shrek",
       "American Psycho",
-      "Barie",
+      "Barbie",
       "Rocky Horror Picture Show",
     ];
+
     const randomIndex = Math.floor(Math.random() * randomMovies.length);
     const randomMovie = randomMovies[randomIndex];
     getMovie(randomMovie);
