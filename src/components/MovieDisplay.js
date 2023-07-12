@@ -8,6 +8,7 @@ const MovieDisplay = ({ movieData }) => {
         <h2>{movieData.Genre}</h2>
         <img src={movieData.Poster} alt={movieData.Title} />
         <h2>{movieData.Year}</h2>
+        <p>{movieData.Plot}</p>
       </div>
     );
   };
